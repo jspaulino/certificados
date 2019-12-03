@@ -5,11 +5,16 @@ body{
 }
 
 .titulo{
-    height: 250px;
-    width: 50%;
+    height: 200px;
+    width: 40%;
     display:block;
     float: right;
-    padding-top: 0px 0px;
+    padding: 0px 0px;
+    margin-bottom: 2px;
+}
+
+.subtitulo{
+    margin-top: -7%;
 }
 
 h1{
@@ -41,7 +46,7 @@ hr{
     box-shadow: none;
     background-color: #43ae61;
     height: 5px;
-    width: 100%; 
+    width: 99%; /* se for 100% fica a scroll bar horizontal pra rolar 1px*/ 
     z-index: -1;
     position: relative;
     bottom: 240px;
