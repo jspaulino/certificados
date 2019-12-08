@@ -12,7 +12,7 @@
     <!--  linkando com o css e o js  -->
     <link rel="stylesheet" href="{{ url_for('static',filename='css/index.css') }}" />
     <script src="index.js"></script>
-    
+
 
     <!-- Essa fonte aí do googlefonts que achei n sei onde-->
     <link href="https://fonts.googleapis.com/css?family=Nunito:300&display=swap" rel="stylesheet">
@@ -30,28 +30,45 @@
 
         <div class="passo">
             <h2>Passo 1</h2>
-            <div class="bola"><img src="" /></div>
+            <form id="enviarArquivo" action="/upload" enctype="multipart/form-data" method="post">
+                <div class="bola">
+                    <img src="{{ url_for('static',filename='icons/search.png') }}" />
+                    <input type="file" onseeked="fazUpload()" name="teste" id="teste" />
+                    <button id="btnFazUpload" type="submit"></button>
+                </div>
+            </form>
             <p>Pesquise em seu computador o arquivo xls/xlsx com o nome dos participantes e emails.</p>
         </div>
 
         <div class="passo">
             <h2>Passo 2</h2>
-            <div class="bola"><img src="" /></div>
+            <div class="bola">
+                <img src="" />
+            </div>
             <p>Selecione um de nossos template para o seu certificado ou faça o upload de uma imagem de fundo.</p>
         </div>
 
         <div class="passo">
             <h2>Passo 3</h2>
-            <div class="bola"><img src="" /></div>
+            <div class="bola">
+                <img src="" />
+            </div>
             <p>Envie os certificados gerados automaticamente para cada um da lista de emails presentes na planilha.</p>
         </div>
 
         <div class="passo">
             <h2>Passo 4</h2>
-            <div class="bola"><img src="" /></div>
+            <div class="bola">
+                <img src="" />
+            </div>
             <p>Confira as informações e envie. Pronto, é isso</p>
         </div>
         <hr>
+    </div>
+
+    <div class="footer">
+        <a href="https://www.freepik.es/fotos-vectores-gratis/fondo">Vetor de Fundo criado por pikisuperstar -
+            www.freepik.es</a>
     </div>
 </body>
 
